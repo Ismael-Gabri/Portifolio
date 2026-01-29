@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  margin-top: 32px;
+}
+
+.service-content {
+  margin-top: 50px;
+}
+
+.section-center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.servcies-section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: nowrap; /*  impede ir pra baixo */
+  margin-left: -50px;
+}
+
+.servcies-section-wrapper {
+  margin-top: 50px;
+}
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container {
+  min-height: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding: 32px 0;
+}
+.navbar {
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #22f5a3;
+}
+
+.logos span {
+  color: #22f5a3;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 14px;
+}
+
+nav a {
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+nav a.active {
+  color: #22f5a3;
+  border-bottom: 1px solid #22f5a3;
+  padding-bottom: 4px;
+}
+
+nav button {
+  margin-left: 20px;
+  background: #22f5a3;
+  color: #000;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.services-box {
+  background-color: #222222;
+  color: white;
+  width: 250px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.services-box:hover {
+  background-color: #136921;
+}
+
+.services-box h3,
+.services-box p {
+  margin: 0px;
+  text-align: center;
+}
+
+.services-box i {
+  background-color: white;
+  color: #d2691e;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 32px; /* antes: 40px */
+}
+
+.description {
+  max-width: 420px;
+  color: #bfc1c5;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* From Uiverse.io by Yaya12085 */
+.card {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  background-color: #252525;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(29, 29, 29);
+}
+
+.projects {
+  margin-left: 377px;
+  margin-top: 34px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #000000;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: 0.3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
