@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #0E0F14;
+  background: #0e0f14;
   color: #ffffff;
   font-family: Inter, Arial, sans-serif;
 }
@@ -21,14 +21,19 @@ body {
   padding: 32px 80px; /* antes: 40px */
 }
 
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   font-size: 24px;
   font-weight: 700;
-  margin-left: 280px;
 }
 
 .logo span {
-  color: #22F5A3;
+  color: #22f5a3;
 }
 
 nav {
@@ -36,23 +41,22 @@ nav {
   align-items: center;
   gap: 28px;
   font-size: 14px;
-  margin-right: 350px;
 }
 
 nav a {
-  color: #9CA3AF;
+  color: #9ca3af;
   cursor: pointer;
 }
 
 nav a.active {
-  color: #22F5A3;
-  border-bottom: 1px solid #22F5A3;
+  color: #22f5a3;
+  border-bottom: 1px solid #22f5a3;
   padding-bottom: 4px;
 }
 
 nav button {
   margin-left: 20px;
-  background: #22F5A3;
+  background: #22f5a3;
   color: #000;
   border: none;
   padding: 10px 22px;
@@ -61,23 +65,37 @@ nav button {
   cursor: pointer;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* HERO */
 
 .hero {
+  max-width: 1200px; /* largura do hero */
+  margin: 0 auto;
+  justify-content: center; /* centraliza o conjunto */ /* CENTRALIZA */
   display: flex;
-  padding: 90px 80px 0; /* antes: 120px */
+  min-height: unset;
+  padding-bottom: 80px;
+  align-items: flex-start;
+  padding-top: 143px;
+}
+
+.hero-inner {
+  display: flex;
 }
 
 .hero-left {
-  width: 50%;
-  margin-left: 280px;
-  margin-top: 7px;
+  max-width: 520px;
 }
 
 .tag {
   font-size: 13px;
   letter-spacing: 4px;
-  color: #9CA3AF;
+  color: #9ca3af;
   margin-bottom: 18px; /* antes: 24px */
 }
 
@@ -89,12 +107,12 @@ nav button {
 }
 
 .hero-left h1 span {
-  color: #22F5A3;
+  color: #22f5a3;
 }
 
 .description {
   max-width: 420px;
-  color: #9CA3AF;
+  color: #9ca3af;
   line-height: 1.6;
   margin-bottom: 40px;
 }
@@ -107,15 +125,15 @@ nav button {
 
 .outline {
   background: transparent;
-  border: 1px solid #22F5A3;
-  color: #22F5A3;
+  border: 1px solid #22f5a3;
+  color: #22f5a3;
   padding: 12px 26px;
   border-radius: 999px;
   cursor: pointer;
 }
 
 .icons i {
-  color: #22F5A3;
+  color: #22f5a3;
   font-size: 18px;
   margin-right: 14px;
   cursor: pointer;
@@ -124,21 +142,21 @@ nav button {
 /* HERO RIGHT */
 
 .hero-right {
-  width: 50%;
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
-  margin-right: 330px;
+  max-width: 520px;
 }
 
 .hero-right img {
-    position: absolute;
+  position: absolute;
   width: 420px;
   height: 420px;
   border-radius: 50%;
   object-fit: cover;
   margin-top: 30px;
-  top: -58px
+  top: -58px;
 }
 
 /* STATS */
@@ -150,7 +168,6 @@ nav button {
   text-align: center;
   margin-right: 400px;
 }
-
 
 .carousel::-webkit-scrollbar {
   display: none;
@@ -164,13 +181,11 @@ nav button {
 .stats p {
   margin-top: 8px;
   font-size: 13px;
-  color: #9CA3AF;
+  color: #9ca3af;
 }
 
-
 .carousel {
-  width: 59%;
-  margin-left: 350px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -213,45 +228,22 @@ nav button {
   object-fit: contain;
 }
 
-.branding{
-    margin-top: 127px;
-}
-
-
-.branding p{
-    margin-left: 346px;
-}
-
-
-
-
-
-
-
-
-.music{
+.music {
   position: relative;
   top: 310px;
   left: 130px;
 }
 
+.branding {
+  position: relative;
+  margin-top: 80px;
+}
 
+.branding p {
+  margin-bottom: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* From Uiverse.io by csozidev */ 
+/* From Uiverse.io by csozidev */
 /* Spotify music card made by: csozi | Website: www.csozi.hu*/
 
 .card {
@@ -453,28 +445,9 @@ nav button {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 nav a {
   position: relative;
-  color: #9CA3AF;
+  color: #9ca3af;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -487,7 +460,7 @@ nav a::after {
   bottom: -6px;
   width: 0;
   height: 2px;
-  background: #22F5A3;
+  background: #22f5a3;
   transition: width 0.3s ease;
 }
 
@@ -502,24 +475,23 @@ nav a:hover::after {
 
 /* ativo fixo */
 nav a.active {
-  color: #22F5A3;
+  color: #22f5a3;
 }
 
 nav a.active::after {
   width: 100%;
 }
 
-
 .outline {
   position: relative;
   background: transparent;
-  border: 1px solid #22F5A3;
-  color: #22F5A3;
+  border: 1px solid #22f5a3;
+  color: #22f5a3;
   padding: 12px 26px;
   border-radius: 999px;
   cursor: pointer;
   overflow: hidden;
-  transition: 
+  transition:
     color 0.3s ease,
     transform 0.25s ease,
     box-shadow 0.3s ease;
@@ -530,7 +502,7 @@ nav a.active::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: #22F5A3;
+  background: #22f5a3;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.35s ease;
