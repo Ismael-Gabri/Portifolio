@@ -454,6 +454,24 @@ nav button {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav a {
   position: relative;
   color: #9CA3AF;
@@ -491,21 +509,47 @@ nav a.active::after {
   width: 100%;
 }
 
-.outline:hover {
-  background: #19f3a3;
-  color: #0d0f14;
+
+.outline {
+  position: relative;
+  background: transparent;
+  border: 1px solid #22F5A3;
+  color: #22F5A3;
+  padding: 12px 26px;
+  border-radius: 999px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 
+    color 0.3s ease,
+    transform 0.25s ease,
+    box-shadow 0.3s ease;
 }
 
+/* camada de preenchimento */
+.outline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #22F5A3;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+  z-index: -1;
+}
 
+/* hover */
+.outline:hover {
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(34, 245, 163, 0.35);
+}
 
+.outline:hover::before {
+  transform: scaleX(1);
+}
 
-
-
-
-
-
-
-
-
-
-
+/* click */
+.outline:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(34, 245, 163, 0.25);
+}
